@@ -13,8 +13,8 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-  greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  greeting.innerText = `안녕하세요! ${username}님`;
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);

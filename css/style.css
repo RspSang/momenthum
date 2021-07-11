@@ -1,3 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.clock {
+  background: -webkit-linear-gradient(#e5bdf6 0%, #d8dede 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+
+.greeting {
+  background: -webkit-linear-gradient(#d8dede 0%, #e5bdf6 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quote {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #eeeeee;
+  margin-top: 4rem;
+  width: 14rem;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #6e45e1;
+}
+
+input:last-child {
+  margin-top: 1.5rem;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.weather span {
+  color: white;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+}
+ul li::before {
+  margin-left: -2rem;
+  content: "📌";
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+ul li span {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 0.6rem;
+}
+
+ul li button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-left: 2rem;
+}
+
+ul li button:hover {
+  cursor:pointer;
+}
+
+.quote span:first-child {
+  font-size: 1.3rem;
+  color: azure;
+}
+
+.quote span:last-child {
+  font-size: 1rem;
+  color: #e5bdf6;
+  font-style: italic;
+}
+
 .hidden {
-    display: none;
+  display: none;
 }
